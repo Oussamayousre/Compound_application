@@ -1,0 +1,260 @@
+,Compound,uchemID,Parent or metabolite,Metabolite of,suspectID,Monoisotopic mass [g/mol],precMz,retentionTime
+0,Albuterol/Salbutamol,2851,Parent,,nonprio79,239.152144,240.15941999999998,9.92
+1,Alfuzosin,3350,Parent,,nonprio27,389.206304,390.21358,14.06
+2,Alprazolam,3650,Parent,,nonprio46,308.082874,309.09015,19.32
+3,Amantadine,3124,Parent,,nonprio3,151.1361,152.143376,12.76
+4,Betamethasone 21-acetate,3244,Metabolite,Betamethasone,nonprio72a,434.210467,435.217743,20.51
+5,Betamethasone,3242,Parent,,nonprio72,392.199902,393.207178,19.59
+6,Bromazepam,3628,Parent,,nonprio30,315.000725,316.008001,18.01
+7,Bupivacaine,3305,Parent,,nonprio60,288.220164,289.22744,14.66
+8,Celiprolol,3015,Parent,,nonprio6,379.247107,380.254383,13.83
+9,Chlordiazepoxide,10513,Parent,,nonprio57,299.08254,300.089816,16.01
+10,Cortisone,3199,Metabolite,Hydrocortisone,nonprio28a,360.193674,361.20095,18.38
+11,Cotinine,3282,Metabolite,Nicotine,nonprio4a,176.094963,177.102239,6.27
+12,Cyclophosphamide,2579,Parent,,nonprio64,260.02482,261.03209599999997,17.16
+13,Diazepam,2626,Parent,,nonprio22,284.071641,285.078917,20.41
+14,Didanosine,3135,Parent,,nonprio66,236.09094,237.09821599999998,10.5
+15,Doxylamine,3018,Parent,,nonprio11,270.173213,271.18048899999997,11.26
+16,Ethambutol,2782,Parent,,nonprio10,204.183778,205.19105399999998,5.08
+17,Exemestane,661,Parent,,nonprio40,296.17763,297.184906,20.54
+18,Flurazepam,3621,Parent,,nonprio7,387.151368,388.158644,15.21
+19,Gemcitabine,2603,Parent,,nonprio31,263.071762,264.07903799999997,16.59
+20,Hydrocodone,3332,Parent,,nonprio73,299.152144,300.15942,10.53
+21,Hydrocortisone,3201,Parent,,nonprio28,362.209324,363.21659999999997,18.9
+22,Hydromorphone,3757,Parent,,nonprio49,285.136493,286.14376899999996,8.42
+23,Ifosfamide,2683,Parent,,nonprio93,260.02482,261.03209599999997,16.36
+24,Isoniazid,3768,Parent,,nonprio12,137.058912,138.06618799999998,5.43
+25,Ketamine,2826,Parent,,nonprio55,237.092042,238.09931799999998,12.45
+26,Ketoconazole,3262,Parent,,nonprio97,530.148761,531.1560370000001,16.9
+27,Ketoprofen,205,Parent,,nonprio45.1,254.094294,255.10156999999998,19.78
+28,Linezolid,3291,Parent,,nonprio52,337.143784,338.15106,15.84
+29,Lorazepam,3138,Parent,,nonprio18,320.011933,321.019209,19.18
+30,Memantine,3351,Parent,,nonprio33,179.1674,180.17467599999998,14.93
+31,Meperidine/Pethidine,3331,Parent,,nonprio34,247.157229,248.164505,13.56
+32,Mepivacaine,3126,Parent,,nonprio61,246.173213,247.180489,12.34
+33,Methsuximide/Mesuximide,3285,Parent,,nonprio39,203.094629,204.101905,17.5
+34,Mianserin,3274,Parent,,nonprio9,264.162649,265.169925,15.35
+35,Mianserin N-oxide,3278,Metabolite,Mianserin,nonprio9b,280.157563,281.164839,15.98
+36,Midazolam,3023,Parent,,nonprio5,325.078203,326.08547899999996,15.35
+37,Naltrexone,2830,Parent,,nonprio59,341.162708,342.169984,10.36
+38,Nandrolone,10528,Parent,,nonprio84,274.19328,275.200556,20.68
+39,Nicotine,3008,Parent,,nonprio4,162.115698,163.122974,5.52
+40,Noscapine,3024,Parent,,nonprio43,413.147452,414.154728,13.72
+41,Nystatine,3140,Parent,,nonprio24,925.5035,926.5107760000001,18.75
+42,Oseltamivir,658,Parent,,nonprio65,312.204907,313.212183,15.55
+43,Prilocaine,3141,Parent,,nonprio77,220.157563,221.164839,12.4
+44,Procaine,10728,Parent,,nonprio54,236.152478,237.159754,9.49
+45,Pyrimethamine (daraclor),10748,Parent,,nonprio81,248.082874,249.09015,14.35
+46,Ramiprilate/Ramipril,4345,Parent,,nonprio8,388.199822,389.207098,17.45
+47,Rivastigmine,2844,Parent,,nonprio71,250.168128,251.175404,12.9
+48,Sulpiride,3027,Parent,,nonprio32,341.140927,342.14820299999997,9.05
+49,Thiopental,2742,Parent,,nonprio88,242.108899,243.116175,14.35
+50,Tiapride,3028,Parent,,nonprio29,328.145678,329.15295399999997,9.87
+51,Tilidine,3329,Parent,,nonprio37,273.172879,274.180155,13.37
+52,Zonisamide,3132,Parent,,nonprio21,212.025563,213.032839,13.92
+53,"2,5-Dimethoxy-4-ethylphenethylamine (2C-E)",10507,Drug of abuse,,,209.141579,210.148855,15.15
+54,4-Hydroxy-3-methoxymethamphetamine (HMMA),10551,Drug of abuse metabolite,MDMA,,195.125929,196.133205,9.44
+55,Alpha-pyrrolidinovalerophenone (Alpha-PVP),10710,Drug of abuse,,,231.162314,232.16959,13.26
+56,Amphetamine,2822,Drug of abuse,,,135.104799,136.112075,11.12
+57,Benzoylecgonine,2823,Drug of abuse metabolite,Cocaine,,289.131408,290.138684,13.68
+58,Bufexamac,3322,"Parent, non-consumedata",,,223.120843,224.128119,18.86
+59,Butamben,10598,"Parent, non-CH",,,193.110279,194.11755499999998,19.61
+60,Cocaine,2817,Drug of abuse,,,303.147058,304.154334,12.97
+61,Crotamiton,3200,"Parent, non-CH",,,203.131014,204.13828999999998,20.24
+62,Crotethamide,3187,Parent veterinary,,,226.168128,227.175404,16.9
+63,Disopyramide,3855,"Parent, non-CH",,,339.231063,340.238339,12.97
+64,Dropropizine,3307,"Parent, non-CH",,,236.152478,237.159754,9.49
+65,Ecgonine,10795,Drug of abuse metabolite,,,185.105193,186.112469,15.0
+66,Flufenamic acid,3021,"Parent, non-consumedata",,,281.066363,282.073639,22.4
+67,Genistein,3265,"Parent, non-consumedata",,,270.052823,271.060099,18.78
+68,Levamisole,2857,Parent veterinary,,,204.072119,205.07939499999998,10.27
+69,Lovastatin,3139,"Parent, non-CH",,,404.256274,405.26355,22.88
+70,"3,4-Methylenedioxymethamphetamine (MDMA)",3613,Drug of abuse,,,193.110279,194.11755499999998,11.41
+71,Mephedrone,2827,Drug of abuse,,,177.115364,178.12264,18.84
+72,Methamphetamine,2829,Drug of abuse,,,149.120449,150.127725,11.26
+73,Methoxetamine,10672,Drug of abuse,,,247.157229,248.164505,12.76
+74,Mexiletine,3010,"Parent, non-CH",,,179.131014,180.13828999999998,14.02
+75,Mitragynine,10527,"Parent, non-CH",,,398.220557,399.227833,14.98
+76,Norfentanyl,3612,Drug of abuse metabolite,,,232.157563,233.164839,12.67
+77,Norketamine,10530,Drug of abuse metabolite,,,223.076392,224.083668,12.53
+78,Olopatadine,3323,Parent non-consumedata,,,337.167794,338.17507,15.7
+79,Praziquantel,3272,Parent non-CH veterinary,,,312.183778,313.191054,20.41
+80,Propoxyphene,3344,"Parent, non-CH",,,339.219829,340.227105,16.48
+81,Rimantadine,3149,"Parent, non-CH",,,179.1674,180.17467599999998,15.73
+82,Sulfadiazine,179,Parent non-consumedata,,,250.052446,251.059722,10.89
+83,Sulfamethazine,181,"Parent, non-CH",,,278.083746,279.091022,12.97
+84,Sulfathiazole,185,"Parent, non-CH",,,255.013618,256.020894,11.26
+85,Tetracaine,10600,Parent non-consumedata,,,264.183778,265.191054,15.06
+86,11-Nor-9-carboxy-delta-9-tetrahydrocannabinol (THC-COOH),10508,Drug of abuse metabolite,THC,,344.198759,345.206035,22.99
+87,Timolol,3210,Parent non-consumedata,,,316.156911,317.16418699999997,13.06
+88,Trimetazidine,10724,"Parent, non-CH",,,266.163043,267.170319,9.52
+89,Tylosin,187,Parent veterinary,,,915.51915,916.526426,16.67
+90,Xylometazoline,3031,Parent non-consumedata,,,244.193949,245.201225,16.52
+91,1-(3-Chlorophenyl)piperazine,2818,Metabolite,Trazodone,38a,196.076726,197.084002,13.26
+92,4-Acetamidoantipyrine,236,Metabolite,Metamizole sodium,6.1d,245.116427,246.12370299999998,12.67
+93,"4-Amino-6-chlorobenzene-1,3-disulfonamide",3257,Metabolite,Hydrochlorothiazide,22a,284.964475,285.971751,9.92
+94,4-Aminoantipyrine,845,Metabolite,Metamizole sodium,6.1c,203.105862,204.113138,10.5
+95,4-Chlorobenzophenone,3380,Metabolite,Cetirizine,204e,216.034193,217.04146899999998,21.9
+96,4-Dimethylaminoantipyrine (aminopyrine),702,Metabolite,Metamizole sodium,6.1e,231.137162,232.14443799999998,10.06
+97,4-Formylaminoantipyrine,1038,Metabolite,Metamizole sodium,6.1b,231.100777,232.10805299999998,12.56
+98,4'-Hydroxydiclofenac + 5-Hydroxydiclofenac,3397,Metabolite,Diclofenac,"21a, 21h",311.011599,312.018875,20.09
+99,5-Fluorocytosine,3121,Metabolite,Capecitabine,100i,129.03384,130.041116,10.41
+100,6-Acetylmorphine,3614,Metabolite,"Codeine, Morphine","92i, 96g",327.147058,328.154334,10.72
+101,Aliskiren,3123,Parent,,61,551.393436,552.400712,17.56
+102,Allopurinol,3336,Parent,,17,136.038511,137.045787,10.47
+103,Amisulpride,2852,Parent,,128,369.172227,370.179503,11.23
+104,Amisulpride N-Oxide,3399,Metabolite,Amisulpride,128f,385.167142,386.174418,12.05
+105,Amoxicillin,3083,Parent,,7,365.104541,366.111817,9.7
+106,Amoxicillin impurity E,3866,Metabolite,Amoxicillin,7h,339.125277,340.132553,10.2
+107,Amoxicillin impurity F,3867,Metabolite,Amoxicillin,7i,188.058578,189.065854,13.16
+108,Atazanavir,3012,Parent,,223,704.389748,705.3970240000001,21.34
+109,Atenolol,169,Parent,,51,266.163043,267.170319,9.52
+110,Atenolol-desisopropyl,2670,Metabolite,Atenolol,51c,224.116092,225.123368,15.55
+111,Atenolol acid/metoprolol acid,697,Metabolite,"Atenolol, Metoprolol","51e, 19h",267.147058,268.154334,11.26
+112,Atorvastatin,2810,Parent,,26,558.253,559.2602760000001,20.75
+113,Azithromycin,190,Parent,,120,748.508526,749.515802,13.74
+114,Azithromycin N-oxide,3788,Metabolite,Azithromycin,120k,764.50344,765.510716,14.49
+115,Bezafibrate,209,Parent,,132,361.108086,362.115362,20.41
+116,Bisoprolol,3013,Parent,,154,325.225308,326.232584,14.6
+117,Bisoprolol impurity L,10339,Metabolite,"Bisoprolol, Metoprolol","154f, 19g",237.136493,238.143769,10.67
+118,Bupropion,2803,Parent,,114,239.107692,240.11496799999998,14.25
+119,Caffeine,303,"Parent, Metabolite",Theophylline,"73, 157e",194.080376,195.087652,13.37
+120,Candesartan,2804,Parent,,58,440.159689,441.166965,19.7
+121,Capecitabine,2845,Parent,,100,359.149264,360.15654,18.55
+122,Carbamazepine,194,Parent,,28,236.094963,237.102239,18.43
+123,"Carbamazepine-10,11-dihydro-10,11-dihydroxy",2701,Metabolite,Carbamazepine,28b,270.100442,271.107718,16.18
+124,"Carbamazepine-10,11-epoxide",916,Metabolite,Carbamazepine,28a,252.089878,253.097154,16.58
+125,Cathine,3335,Metabolite,Pseudoephedrine,98a,151.099714,152.10699,9.99
+126,Cetirizine,2772,Parent,,204,388.15537,389.162646,18.33
+127,Cetirizine N-oxide,3381,Metabolite,Cetirizine,204b,404.150285,405.157561,18.59
+128,Clomethiazole,10563,Parent,,82,161.006598,162.013874,17.1
+129,Ciprofloxacin,276,Parent,,25,331.13322,332.140496,12.5
+130,Citalopram,2901,Parent,,115,324.163792,325.171068,15.27
+131,Clarithromycin N-oxide,3446,Metabolite,Clarithromycin,49c,763.471806,764.4790820000001,18.19
+132,Clarithromycin,191,Parent,,49,747.476891,748.4841670000001,17.75
+133,Clindamycin,657,Parent,,78,424.179871,425.187147,15.44
+134,Clopidogrel carboxylic acid,2854,Metabolite,Clopidogrel,45c,307.043377,308.050653,15.78
+135,Clozapine,2841,Parent,,88,326.129824,327.1371,15.15
+136,Codeine,2780,Parent,,92,299.152144,300.15942,9.69
+137,"2-(3,4-Dimethoxyphenyl)-2-isopropyl-5-(methylamino)pentanenitrile (D617)",2637,Metabolite,Verapamil,66c,290.199428,291.206704,14.88
+138,Darunavir,3016,Parent,,74,547.235221,548.2424970000001,18.86
+139,Des(isopropoxyethyl) bisoprolol,10337,Metabolite,"Bisoprolol, Metoprolol","154e, 19d",239.152144,240.15941999999998,18.46
+140,Desacetyldiltiazem,10806,Metabolite,Diltiazem,99e,372.150763,373.158039,15.12
+141,Dextromethorphan,2824,Parent,,113,271.193614,272.20089,15.27
+142,Dextrorphan,10521,Metabolite,Dextromethorphan,113a,257.177964,258.18523999999996,12.93
+143,Diclofenac,201,Parent,,21,295.016684,296.02396,21.68
+144,Didemethylcitalopram,4019,Metabolite,Citalopram,115d,296.132491,297.139767,15.32
+145,Dihydrobupropion,10804,Metabolite,Bupropion,"114q, 114s, 114u, 114w",241.123342,242.130618,14.35
+146,Dihydrocodeine,3333,Parent,,203,301.167794,302.17507,9.79
+147,Diltiazem,3017,Parent,,99,414.161328,415.168604,15.98
+148,Diphenhydramine,3352,Parent,,94,255.162314,256.16959,15.32
+149,Dolutegravir,10692,Parent,,252,419.129277,420.136553,19.12
+150,Duloxetine,10539,Parent,,90,297.118735,298.126011,16.75
+151,"2-Ethylidene-1,5-dimethyl-3,3-diphenylpyrrolidine (EDDP)",2825,Metabolite,Methadone,227a,277.18305,278.19032599999997,15.2
+152,Efavirenz,3292,Parent,,107,315.027391,316.034667,21.6
+153,Emtricitabine,3106,Parent,,106,247.04269,248.04996599999998,10.41
+154,Ephedrine,2758,"Parent, Metabolite",Methylephedrin,"nonprio53, 242a",165.115364,166.12264,10.19
+155,Eprosartan,2776,Parent,,97,424.145678,425.15295399999997,15.55
+156,Etodolac,3308,Parent,,40,287.152144,288.15942,21.68
+157,Ezetimibe,10694,Parent,,200,409.14895,410.156226,20.41
+158,Fenofibric acid,337,Metabolite,Fenofibrate,79a,318.065887,319.07316299999997,21.85
+159,Fexofenadine,3019,Parent,,75,501.287909,502.295185,16.58
+160,Fexofenadine N-oxide,3783,Metabolite,Fexofenadine,75b,517.282823,518.290099,16.72
+161,Flecainide,3020,Parent,,178,414.137812,415.145088,15.27
+162,Fluconazole,328,Parent,,225,306.104065,307.111341,15.04
+163,Fluvastatin,3136,Parent,,191,411.184587,412.191863,21.65
+164,Gabapentin,2561,Parent,,30,171.125929,172.133205,11.12
+165,Hydroxybupropion,10797,Metabolite,Bupropion,"114a, 114b, 114d, 114i, 114j, 114l",255.102607,256.109883,13.79
+166,Iminostilbene,992,Metabolite,Carbamazepine,28l,193.089149,194.09642499999998,20.97
+167,Indomethacin,207,Metabolite,Acemetacin,68a,357.076786,358.084062,21.71
+168,Iopromide,242,Parent,,257,790.869759,791.8770350000001,10.81
+169,Irbesartan,2774,Parent,,14,428.23246,429.239736,19.47
+170,Lamotrigine,2676,Parent,,43,255.007851,256.015127,13.49
+171,Lansoprazole,3137,Parent,,193,369.075882,370.08315799999997,16.33
+172,Levetiracetam,2564,Parent,,11,170.105528,171.11280399999998,11.58
+173,Levofloxacin,3239,Parent,,148,361.143784,362.15106,12.05
+174,Lidocaine,2572,Parent,,233,234.173213,235.180489,11.91
+175,Lidocaine N-desethyl,3471,Metabolite,Lidocaine,233b,206.141913,207.14918899999998,11.26
+176,Lidocaine N-oxide,3279,Metabolite,Lidocaine,233a,250.168128,251.175404,12.9
+177,Lopinavir,10438,Parent,,207,628.362471,629.3697470000001,22.38
+178,Losartan,2749,Parent,,39,422.162187,423.169463,19.35
+179,Mefenamic acid,208,Parent,,8,241.110279,242.11755499999998,22.61
+180,Methadone,2828,Parent,,227,309.209264,310.21654,16.73
+181,Methylphenidate,10545,Parent,,140,233.141579,234.148855,13.16
+182,Metoclopramide,2781,Parent,,237,299.140055,300.147331,12.11
+183,Metoprolol,172,Parent,,19,267.183444,268.19072,13.06
+184,Metronidazole,197,Parent,,54,171.064391,172.071667,10.78
+185,Mirtazapine,3622,Parent,,108,265.157898,266.165174,12.83
+186,Moclobemide,2675,Parent,,211,268.097856,269.10513199999997,12.34
+187,Morphine,2744,"Parent, Metabolite",Codeine,"96, 92e",285.136493,286.14376899999996,6.77
+188,Mycophenolic acid,2808,Metabolite,Mycophenolate mofetil,77a,320.125988,321.133264,19.83
+189,N4-Acetyl-sulfamethoxazole,299,Metabolite,Sulfamethoxazole,27c,295.062677,296.069953,15.4
+190,N4-Acetyl-sulfapyridine,4079,Metabolite,Sulfasalazine,42c,291.067762,292.075038,13.06
+191,Naloxone,10737,Parent,,247,327.147058,328.154334,9.89
+192,Naproxen,202,Parent,,20,230.094294,231.10156999999998,20.18
+193,N-Bisdesmethyltramadol,3398,Metabolite,Tramadol,31f,235.157229,236.164505,13.54
+194,N-Desmethylclarithromycin,3394,Metabolite,Clarithromycin,49b,733.461241,734.468517,17.75
+195,N-Desmethylazithromycin,3858,Metabolite,Azithromycin,120l,734.492876,735.5001520000001,13.79
+196,N-Desmethylcitalopram,4083,Metabolite,Citalopram,115a,310.148141,311.155417,15.35
+197,N-Desmethylpheniramine,3420,Metabolite,Pheniramine,163a,226.146999,227.15427499999998,11.51
+198,N-Desmethyltramadol,3565,Metabolite,Tramadol,31e,249.172879,250.18015499999998,14.92
+199,N-Desvenlafaxine,1034,Metabolite,Venlafaxine,35g,263.188529,264.195805,14.88
+200,N-N-Didesvenlafaxine,2658,Metabolite,Venlafaxine,35h,249.172879,250.18015499999998,13.43
+201,N-O-Didesvenlafaxine,2657,Metabolite,Venlafaxine,35c,249.172879,250.18015499999998,12.53
+202,Norcodeine,10790,Metabolite,Codeine,92a,285.136493,286.14376899999996,10.12
+203,Norephedrine,3684,Metabolite,"Methylephedrine, LISDEXAMFETAMINE","242c, 260c",151.099714,152.10699,9.99
+204,Noroxycodone,10798,Metabolite,Oxycodone,144f,301.131408,302.138684,10.53
+205,Norpheniramine formamide,3743,Metabolite,Pheniramine,163d,254.141913,255.14918899999998,14.18
+206,O-Des[2-aminoethyl]-O-carboxymethyl-dehydroamlodipine,10462,Metabolite,Amlodipine,80e,421.09283,422.100106,19.53
+207,O-Desvenlafaxine,1053,Metabolite,Venlafaxine,35a,263.188529,264.195805,12.7
+208,Olmesartan,4229,Metabolite,Olmesartan medoxomil,84a,446.206639,447.213915,16.36
+209,Oxazepam,2743,Parent,,147,286.050905,287.058181,19.38
+210,Oxcarbazepine,2858,Parent,,62,252.089878,253.097154,17.36
+211,Oxycodone,3754,Parent,,144,315.147058,316.154334,10.27
+212,Pantoprazole,644,Parent,,18,383.075133,384.082409,17.15
+213,Perindopril,3026,Parent,,184,368.231122,369.238398,16.44
+214,Phenazone (antipyrine),338,Metabolite,Metamizole sodium,6.1f,188.094963,189.102239,14.23
+215,Pheniramine,3005,Parent,,163,240.162649,241.16992499999998,11.63
+216,Pheniramine N-oxide,3254,Metabolite,Pheniramine,163c,256.157563,257.164839,12.28
+217,Phenytoin,3319,Parent,,156,252.089878,253.097154,15.66
+218,Piracetam,3076,Parent,,104,142.074228,143.081504,17.75
+219,Prednisone,3243,"Parent, Metabolite",Prednisolone,"181, 198a",358.178024,359.1853,18.22
+220,Pregabalin racemic,3129,Parent,,29,159.125929,160.133205,11.0
+221,Prenalterol,10338,Metabolite,Atenoll,51d,225.136493,226.143769,9.21
+222,Primidone,195,Parent,,171,218.105528,219.11280399999998,15.32
+223,Propanolol,171,Parent,,102,259.157229,260.16450499999996,15.15
+224,Ranitidine N-oxide,2738,Metabolite,Ranitidine,86b,330.136176,331.14345199999997,9.73
+225,Ranitidine S-oxide,2737,Metabolite,Ranitidine,86c,330.136176,331.14345199999997,5.58
+226,Ritalinic acid,701,Metabolite,Methylphendiate,140a,219.125929,220.133205,13.1
+227,Ritonavir,2580,Parent,,192,720.31276,721.3200360000001,21.96
+228,Rivaroxaban,3769,Parent,,127,435.065569,436.072845,17.85
+229,Rosuvastatin,2802,Parent,,117,481.168285,482.175561,19.26
+230,S-(+)-Clopidogrel,3764,Parent,,45,321.059027,322.066303,20.89
+231,Sertraline,10552,Parent,,63,305.073805,306.081081,17.5
+232,Sildenafil,10550,Parent,,239,474.204924,475.2122,16.21
+233,Sitagliptin,2903,Parent,,37,407.118079,408.125355,13.37
+234,Sotalol,170,Parent,,152,272.119463,273.126739,8.73
+235,Sulfamethoxazole,298,Parent,,27,253.052112,254.05938799999998,13.92
+236,Sulfamethoxazole N1-glucuronide,3859,Metabolite,Sulfamethoxazole,27g,429.0842,430.091476,12.68
+237,Sulfapyridine,234,Metabolite,Sulfasalazine,42a,249.057197,250.064473,11.52
+238,Tapentadol,10800,Parent,,168,221.177964,222.18524,13.43
+239,Tazobactam,3882,Parent,,151,300.05284,301.060116,10.72
+240,Telmisartan,2805,Parent,,91,514.236876,515.2441520000001,18.15
+241,Terbinafine,3586,Parent,,109,291.1987,292.20597599999996,17.5
+242,Torasemide,3145,Parent,,65,348.125611,349.132887,16.62
+243,Tramadol N-oxide,3310,Metabolite,Tramadol,31g,279.183444,280.19072,13.49
+244,Tramadol,2567,Parent,,31,263.188529,264.195805,12.9
+245,Trazodone,10547,Parent,,38,371.151288,372.158564,14.22
+246,Trimethoprim,199,Parent,,116,290.13789,291.145166,11.32
+247,Trimipramine,2861,Parent,,119,294.209599,295.216875,16.96
+248,Trimipramine N-oxide,3561,Metabolite,Trimipramine,119f,310.204513,311.211789,17.3
+249,Trospium,3030,Parent,,213,391.214744,392.22202,14.49
+250,Valsartan,2583,Parent,,13,435.22704,436.234316,20.57
+251,Valsartan acid,2795,Metabolite,"Valsartan, Irbesartan, Losartan, Candesartan","13c, 14i, 39g, 58e",266.080376,267.087652,17.45
+252,Vancomycin,3237,Parent,,205,1447.4302,1448.437476,9.93
+253,Venlafaxine,645,Parent,,35,277.204179,278.211455,14.77
+254,Venlafaxine N-oxide,3396,Metabolite,Venlafaxine,35f,293.199094,294.20637,15.43
+255,Verapamil,674,Parent,,66,454.283158,455.290434,15.89
+256,Vildagliptin,3146,Parent,,131,303.194677,304.201953,9.38
+257,Zidovudine,3287,Parent,,224,267.096754,268.10402999999997,13.89
+258,Zolpidem,2801,Parent,,125,307.168462,308.17573799999997,13.62
