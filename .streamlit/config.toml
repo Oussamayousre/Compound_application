@@ -1,0 +1,4 @@
+[server]
+headless = true
+enableCORS=false
+python = "/path/to/your/python3.10.12/executable"

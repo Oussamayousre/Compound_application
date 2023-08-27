@@ -114,7 +114,6 @@ if menu == "Display Compounds":
         st.write(filtered_df)
     else:
         edited_df = st.write(df)  # Display the entire DataFrame
-import gdown
 
 if menu == "Data Visualization":
     # url = "https://drive.google.com/file/d/1Ab_DJWWvfBPkNx0ApWLUBnSsvBe5wz2X/view?usp=sharing"
