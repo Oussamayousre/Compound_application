@@ -270,26 +270,13 @@ if menu == "Data Metrics":
 
     selected_fragment = st.selectbox("Select a fragment number", options=fragment_list)
     selected_fragment_index = st.number_input("Select a row index:", min_value=0, max_value=53, value=0)
-    if selected_fragment_index  : 
+    if selected_fragment_index   : 
         selected_fragment = df_fragment['0'][selected_fragment_index]
-        print(selected_fragment)
+        plot_kmd(df, size=df.shape[0], fragment=str(selected_fragment))
+        plot_kmd2(df, size=df.shape[0], fragment=str(selected_fragment) ) 
+    if selected_fragment : 
+        
         plot_kmd(df, size=df.shape[0], fragment=str(selected_fragment))
         plot_kmd2(df, size=df.shape[0], fragment=str(selected_fragment) ) 
 
 
-    # if st.button("Visualize KMD2"):
-    #     plot_kmd2(df, size=df.shape[0], fragment=str(selected_fragment) ) 
-
-    # if selected_fragment_index  : 
-    #     selected_fragment = df_fragment['0'][selected_fragment_index]
-    #     print(selected_fragment)
-    #     plot_kmd(df, size=df.shape[0], fragment=str(selected_fragment))
-    # selected_fragment = st.slider('label', min_value=min(fragment_list), max_value=max(fragment_list), value=fragment_list)
-    # selected_fragment = st.number_input("Select a fragment (0 to 53) for KMD:", min_value=0, max_value=53, value=44)
-    # selected_fragment = df_fragment['0'][selected_fragment]
-    # print(selected_fragment)
-    # if st.button("Visualize KMD"):
-    #     plot_kmd(df, size=df.shape[0], fragment=str(selected_fragment))
-
-    # if st.button("Visualize KMD2"):
-    #     plot_kmd2(df, size=df.shape[0], fragment=str(selected_fragment) ) 
