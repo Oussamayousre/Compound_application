@@ -11,27 +11,43 @@ import numpy as np
 
 from io import BytesIO
 from PIL import Image
+import io
 
 # Define the plot_kmd functions directly in the code
 def plot_kmd(data, size, fragment="44"):
     kmd_f = "_".join(("kmd", fragment))
+    plt.figure(figsize=(6,4))
     plt.scatter(data['precMz'][0:size], data[kmd_f][0:size], marker='.', color='green')
     plt.title("KMD")
     plt.xlabel("precMz")
     plt.ylabel(kmd_f)
-    st.pyplot(plt)
+    # Save the plot to an in-memory buffer with lower dpi
+
+    # Save the plot to an in-memory buffer
+    buffer = io.BytesIO()
+    plt.savefig(buffer, format='png')
+    plt.close()
+
+    # Display the saved plot in Streamlit with adjusted width
+    st.image(buffer.getvalue(), use_column_width=True)
 
 def plot_kmd2(data, size, fragment="44"):
     kmd_f = "_".join(("kmd", fragment))
     km_f = "_".join(("km", fragment))
     x = km_f
     y = kmd_f
+    plt.figure(figsize=(6,4))
     plt.scatter(data[x][0:size], data[y][0:size], marker='.', color='green')
     plt.title("KMD")
     plt.xlabel(x)
     plt.ylabel(y)
-    st.pyplot(plt)
+    # Save the plot to an in-memory buffer
+    buffer = io.BytesIO()
+    plt.savefig(buffer, format='png')
+    plt.close()
 
+    # Display the saved plot in Streamlit with adjusted width
+    st.image(buffer.getvalue(), use_column_width=True)
 def plot_spectrum(row):
     mz_array = row["m/z array"]
     intensity_array = row["intensity array"]
@@ -116,21 +132,104 @@ if menu == "Data Visualization":
         num_pages += 1
     page_num = st.number_input("Enter page number", min_value=1, max_value=num_pages, value=1)
 
-    start_idx = (page_num - 1) * PAGE_SIZE
-    end_idx = min(start_idx + PAGE_SIZE, total_rows)
+    # Add a text input for searching compounds
+    search_compound = st.text_input("Search for a row by source name:")
+    
+    if search_compound:
+        start_idx = (page_num - 1) * PAGE_SIZE
+        end_idx = min(start_idx + PAGE_SIZE, total_rows)
+
+        # Display current page data
+        st.write(f"Showing rows {start_idx + 1} to {end_idx} (out of {total_rows})")
+        df = df.iloc[start_idx:end_idx]
+        # Filter the DataFrame based on the entered compound name
+        filtered_df = df[df["source"].str.contains(search_compound, case=False)]
+        st.write(filtered_df)
+    else:
+        start_idx = (page_num - 1) * PAGE_SIZE
+        end_idx = min(start_idx + PAGE_SIZE, total_rows)
+
+        st.write(f"Showing rows {start_idx + 1} to {end_idx} (out of {total_rows})")
+        edited_df = st.write(df.iloc[start_idx:end_idx])
+        # edited_df = st.write(df)  # Display the entire DataFrame
+    # start_idx = (page_num - 1) * PAGE_SIZE
+    # end_idx = min(start_idx + PAGE_SIZE, total_rows)
 
     # Display current page data
-    st.write(f"Showing rows {start_idx + 1} to {end_idx} (out of {total_rows})")
-    edited_df = st.write(df.iloc[start_idx:end_idx])
+    # st.write(f"Showing rows {start_idx + 1} to {end_idx} (out of {total_rows})")
+    # edited_df = st.write(df.iloc[start_idx:end_idx])
     # Create a section to display the details of a selected row
     # Create a section to display the details of a selected row
     
     
     selected_row_idx = st.number_input("Select a row index to view details:", min_value=0, max_value=len(df) - 1, value=0)
-    
+    row2_idx = st.number_input("Select the second row index for spectrum comparison:", min_value=0, max_value=len(df) - 1, value=1)
+
     if selected_row_idx:
         selected_row = df.iloc[selected_row_idx - 1]
         st.write("### Details")
+        # Create a layout with three columns
+        col1, col2, col3 = st.columns([1, 2, 1])
+        column1 ,column2,column3 = st.columns([1, 2, 1])
+        with col1 : 
+            if st.button("Show Spectrum Graph"):
+                selected_row = df.iloc[selected_row_idx]
+                with column2 : 
+                    plot_spectrum(selected_row)  # Assuming you have a plot_spectrum function
+            
+
+
+        
+        # No specific results column, display other columns if needed
+        if row2_idx : 
+            with col2 : 
+                if st.button("Visualize Spectrum Comparison"):
+                    row1 = df.iloc[selected_row_idx]
+                    row2 = df.iloc[row2_idx]
+
+                    mz_array = row1["m/z array"]
+                    intensity_array = row1["intensity array"]
+
+                    value_list = row1["m/z array"].strip('[]').split()
+
+                    # Convert the list of values to floats and then create a NumPy array
+                    mz_array_1 = np.array([float(value) for value in value_list])
+
+                    # Remove '[' and ']' characters and split the string into a list of values
+                    value_list = row1["intensity array"].strip('[]').split()
+
+                    # Convert the list of values to floats and then create a NumPy array
+                    numpy_array_1 = np.array([float(value) for value in value_list])
+
+
+                    mz_array_2 = row2["m/z array"]
+                    intensity_array = row2["intensity array"]
+
+                    value_list = row2["m/z array"].strip('[]').split()
+
+                    # Convert the list of values to floats and then create a NumPy array
+                    mz_array_2 = np.array([float(value) for value in value_list])
+
+                    # Remove '[' and ']' characters and split the string into a list of values
+                    value_list = row2["intensity array"].strip('[]').split()
+
+                    # Convert the list of values to floats and then create a NumPy array
+                    numpy_array_2 = np.array([float(value) for value in value_list])
+
+
+                    # Create Spectrum instances
+                    spec1 = Spectrum(mz=mz_array_1, intensities=numpy_array_1)
+                    spec2 = Spectrum(mz=mz_array_2, intensities=numpy_array_2)
+                    with column2 : 
+
+                        # Visualize spectrum comparison
+                        fig, _ = spec1.plot_against(spec2, figsize=(4, 2), dpi=100)
+                        st.pyplot(fig)
+
+
+
+
+
 
         # Get the column names that start with "y"
         y_columns = [col_name for col_name in selected_row.index if col_name.startswith("y")]
@@ -155,72 +254,43 @@ if menu == "Data Visualization":
                 st.write(" " * padding, f"**{y_column_name.capitalize()}**: {selected_row[y_column_name]}")
 
         # Display other values in the first column
-        with col1:
-            st.write("### Other Columns")
-            for column_name in other_columns:
-                column_value = selected_row[column_name]
-                st.write(f"{column_name.capitalize()}: {column_value}")
+        st.write("### Other Columns")
+        for column_name in other_columns:
+            column_value = selected_row[column_name]
+            st.write(f"{column_name.capitalize()}: {column_value}")
 
         # Leave the third column empty
         with col3:
             st.write("")
 
-    if st.button("Show Spectrum Graph"):
-        selected_row = df.iloc[selected_row_idx]
-        plot_spectrum(selected_row)  # Assuming you have a plot_spectrum function
-
-    # No specific results column, display other columns if needed
-    row2_idx = st.number_input("Select the second row index for spectrum comparison:", min_value=0, max_value=len(df) - 1, value=1)
-
-    if st.button("Visualize Spectrum Comparison"):
-        row1 = df.iloc[selected_row_idx]
-        row2 = df.iloc[row2_idx]
-
-        mz_array = row1["m/z array"]
-        intensity_array = row1["intensity array"]
-
-        value_list = row1["m/z array"].strip('[]').split()
-
-        # Convert the list of values to floats and then create a NumPy array
-        mz_array_1 = np.array([float(value) for value in value_list])
-
-        # Remove '[' and ']' characters and split the string into a list of values
-        value_list = row1["intensity array"].strip('[]').split()
-
-        # Convert the list of values to floats and then create a NumPy array
-        numpy_array_1 = np.array([float(value) for value in value_list])
-
-
-        mz_array_2 = row2["m/z array"]
-        intensity_array = row2["intensity array"]
-
-        value_list = row2["m/z array"].strip('[]').split()
-
-        # Convert the list of values to floats and then create a NumPy array
-        mz_array_2 = np.array([float(value) for value in value_list])
-
-        # Remove '[' and ']' characters and split the string into a list of values
-        value_list = row2["intensity array"].strip('[]').split()
-
-        # Convert the list of values to floats and then create a NumPy array
-        numpy_array_2 = np.array([float(value) for value in value_list])
-
-
-        # Create Spectrum instances
-        spec1 = Spectrum(mz=mz_array_1, intensities=numpy_array_1)
-        spec2 = Spectrum(mz=mz_array_2, intensities=numpy_array_2)
-
-        # Visualize spectrum comparison
-        fig, _ = spec1.plot_against(spec2, figsize=(4, 2), dpi=100)
-        st.pyplot(fig)
-
 if menu == "Data Metrics":
 
     df = pd.read_csv("app/data_ready.csv")
-    
-    selected_fragment = st.number_input("Select a fragment (0 to 53) for KMD:", min_value=0, max_value=53, value=44)
-    if st.button("Visualize KMD"):
-        plot_kmd(df, size=df.shape[0], fragment=str(selected_fragment))
+    df_fragment = pd.read_csv("app/fragments.csv")
+    fragment_list = df_fragment['0'].tolist()
 
-    if st.button("Visualize KMD2"):
+    selected_fragment = st.selectbox("Select a fragment number", options=fragment_list)
+    selected_fragment_index = st.number_input("Select a row index:", min_value=0, max_value=53, value=0)
+    if selected_fragment_index  : 
+        selected_fragment = df_fragment['0'][selected_fragment_index]
+        print(selected_fragment)
+        plot_kmd(df, size=df.shape[0], fragment=str(selected_fragment))
         plot_kmd2(df, size=df.shape[0], fragment=str(selected_fragment) ) 
+
+
+    # if st.button("Visualize KMD2"):
+    #     plot_kmd2(df, size=df.shape[0], fragment=str(selected_fragment) ) 
+
+    # if selected_fragment_index  : 
+    #     selected_fragment = df_fragment['0'][selected_fragment_index]
+    #     print(selected_fragment)
+    #     plot_kmd(df, size=df.shape[0], fragment=str(selected_fragment))
+    # selected_fragment = st.slider('label', min_value=min(fragment_list), max_value=max(fragment_list), value=fragment_list)
+    # selected_fragment = st.number_input("Select a fragment (0 to 53) for KMD:", min_value=0, max_value=53, value=44)
+    # selected_fragment = df_fragment['0'][selected_fragment]
+    # print(selected_fragment)
+    # if st.button("Visualize KMD"):
+    #     plot_kmd(df, size=df.shape[0], fragment=str(selected_fragment))
+
+    # if st.button("Visualize KMD2"):
+    #     plot_kmd2(df, size=df.shape[0], fragment=str(selected_fragment) ) 
