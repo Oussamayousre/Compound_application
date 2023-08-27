@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 from app.src import config
 import base64
-import plotly.express as px
+# import plotly.express as px
 import ast
 import matplotlib.pyplot as plt
 from matchms import Fragments, calculate_scores, Spectrum
